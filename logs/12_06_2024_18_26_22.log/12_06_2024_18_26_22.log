@@ -1,0 +1,27 @@
+[ 2024-12-06 18:26:38,513 ] 22 root - INFO - Data Ingesion has been started
+[ 2024-12-06 18:26:38,514 ] 24 root - INFO - Data reading using Pandas from local file system
+[ 2024-12-06 18:26:38,546 ] 26 root - INFO - Data Reading has been completed
+[ 2024-12-06 18:26:38,606 ] 30 root - INFO - Raw data has been stored
+[ 2024-12-06 18:26:38,627 ] 33 root - INFO - Raw data has been splitted into Train and Test set
+[ 2024-12-06 18:26:38,660 ] 38 root - INFO - Data Ingestion has been completed!
+[ 2024-12-06 18:26:38,663 ] 49 root - INFO - Created feature store configuration at C:\Users\ASH\Desktop\MLOPS_EXAM_PRACTICE\feature_repo\feature_store.yaml
+[ 2024-12-06 18:26:38,669 ] 53 root - INFO - Configuration file content:
+project: income_prediction
+provider: local
+registry: data/registry.db
+online_store:
+  type: sqlite
+offline_store:
+  type: file
+entity_key_serialization_version: 2
+[ 2024-12-06 18:26:43,590 ] 230 feast.infra.registry.registry - INFO - Registry file not found. Creating new registry.
+[ 2024-12-06 18:26:43,622 ] 57 root - INFO - Feature store initialized successfully
+[ 2024-12-06 18:26:43,651 ] 110 root - INFO - Read train and test data completed
+[ 2024-12-06 18:26:43,651 ] 111 root - INFO - Obtaining preprocessing object
+[ 2024-12-06 18:26:43,651 ] 65 root - INFO - Data Transformation Started
+[ 2024-12-06 18:26:43,653 ] 151 root - ERROR - Error in data transformation: "['income'] not found in axis"
+[ 2024-12-06 18:26:43,653 ] 51 root - ERROR - 
+Error occurred in Python script:
+\u2192 File: c:\users\ash\desktop\mlops_exam_practice\src\components\data_transformation.py
+\u2192 Line number: 120
+\u2192 Error message: "['income'] not found in axis"

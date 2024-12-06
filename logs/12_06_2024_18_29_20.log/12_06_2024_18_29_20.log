@@ -1,0 +1,30 @@
+[ 2024-12-06 18:29:24,950 ] 22 root - INFO - Data Ingesion has been started
+[ 2024-12-06 18:29:24,952 ] 24 root - INFO - Data reading using Pandas from local file system
+[ 2024-12-06 18:29:25,004 ] 26 root - INFO - Data Reading has been completed
+[ 2024-12-06 18:29:25,037 ] 30 root - INFO - Raw data has been stored
+[ 2024-12-06 18:29:25,041 ] 33 root - INFO - Raw data has been splitted into Train and Test set
+[ 2024-12-06 18:29:25,074 ] 38 root - INFO - Data Ingestion has been completed!
+[ 2024-12-06 18:29:25,076 ] 49 root - INFO - Created feature store configuration at C:\Users\ASH\Desktop\MLOPS_EXAM_PRACTICE\feature_repo\feature_store.yaml
+[ 2024-12-06 18:29:25,082 ] 53 root - INFO - Configuration file content:
+project: churn prediction
+provider: local
+registry: data/registry.db
+online_store:
+  type: sqlite
+offline_store:
+  type: file
+entity_key_serialization_version: 2
+[ 2024-12-06 18:29:25,677 ] 60 root - ERROR - Error in initialization: 1 validation error for RepoConfig
+project
+  Value error, Project name, churn prediction, should only have alphanumerical values and underscores but not start with an underscore. [type=value_error, input_value='churn prediction', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/value_error
+at C:\Users\ASH\Desktop\MLOPS_EXAM_PRACTICE\feature_repo\feature_store.yaml
+[ 2024-12-06 18:29:25,677 ] 51 root - ERROR - 
+Error occurred in Python script:
+\u2192 File: c:\users\ash\desktop\mlops_exam_practice\src\components\data_transformation.py
+\u2192 Line number: 56
+\u2192 Error message: 1 validation error for RepoConfig
+project
+  Value error, Project name, churn prediction, should only have alphanumerical values and underscores but not start with an underscore. [type=value_error, input_value='churn prediction', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/value_error
+at C:\Users\ASH\Desktop\MLOPS_EXAM_PRACTICE\feature_repo\feature_store.yaml

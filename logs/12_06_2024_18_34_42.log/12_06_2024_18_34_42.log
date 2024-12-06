@@ -1,0 +1,27 @@
+[ 2024-12-06 18:34:46,643 ] 22 root - INFO - Data Ingesion has been started
+[ 2024-12-06 18:34:46,644 ] 24 root - INFO - Data reading using Pandas from local file system
+[ 2024-12-06 18:34:46,669 ] 26 root - INFO - Data Reading has been completed
+[ 2024-12-06 18:34:46,717 ] 30 root - INFO - Raw data has been stored
+[ 2024-12-06 18:34:46,733 ] 33 root - INFO - Raw data has been splitted into Train and Test set
+[ 2024-12-06 18:34:46,834 ] 38 root - INFO - Data Ingestion has been completed!
+[ 2024-12-06 18:34:46,835 ] 49 root - INFO - Created feature store configuration at C:\Users\ASH\Desktop\MLOPS_EXAM_PRACTICE\feature_repo\feature_store.yaml
+[ 2024-12-06 18:34:46,845 ] 53 root - INFO - Configuration file content:
+project: churn_prediction
+provider: local
+registry: data/registry.db
+online_store:
+  type: sqlite
+offline_store:
+  type: file
+entity_key_serialization_version: 2
+[ 2024-12-06 18:34:47,793 ] 57 root - INFO - Feature store initialized successfully
+[ 2024-12-06 18:34:47,831 ] 110 root - INFO - Read train and test data completed
+[ 2024-12-06 18:34:47,831 ] 111 root - INFO - Obtaining preprocessing object
+[ 2024-12-06 18:34:47,831 ] 65 root - INFO - Data Transformation Started
+[ 2024-12-06 18:34:47,839 ] 126 root - INFO - Applying preprocessing object on training and testing datasets.
+[ 2024-12-06 18:34:47,840 ] 151 root - ERROR - Error in data transformation: A given column is not a column of the dataframe
+[ 2024-12-06 18:34:47,840 ] 51 root - ERROR - 
+Error occurred in Python script:
+\u2192 File: c:\users\ash\desktop\mlops_exam_practice\src\components\data_transformation.py
+\u2192 Line number: 128
+\u2192 Error message: A given column is not a column of the dataframe
