@@ -112,7 +112,4 @@ The best-performing model is chosen based on evaluation metrics like accuracy, r
 ### Prerequisites
 To run this project, you need to have Python 3.x installed. Additionally, you need to install the required libraries. You can do this by creating a virtual environment and installing the dependencies via `pip`.
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/mlops-customer-churn.git
-   cd mlops-customer-churn
+
